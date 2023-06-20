@@ -1,7 +1,10 @@
-import sumar from "./sumador.js";
+import cadena from "./sumador.js";
 
 describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+  it("deberia retornar correcto con []", () => {
+    expect(cadena("[]")).toEqual("correcto");
+  });
+  it("deberia retornar incorrecto con [[", () => {
+    expect(cadena("[[")).toEqual("incorrecto");
   });
 });

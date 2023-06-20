@@ -1,5 +1,8 @@
-function sumar(a, b) {
-  return a + b;
+function cadena(a) {
+  if(a === "[]"){
+    return "correcto";
+  }
+  
 }
 
-export default sumar;
+export default cadena;
