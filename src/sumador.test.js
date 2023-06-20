@@ -17,5 +17,7 @@ describe("Verificacion de vacios", () => {
   it("deberia retornar verdadero si el input no esta vacio", () => {
     expect(verificacion("[]")).toEqual(true);
   });
-  
+  it("deberia retornar falso si el input esta vacio", () => {
+    expect(verificacion("")).toEqual(false);
+  });
 });
