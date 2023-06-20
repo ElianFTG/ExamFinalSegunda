@@ -1,5 +1,8 @@
 function cadena(a) {
-  if(a === "[]"){
+  if(a[0] == "[" && a[a.length - 1] == "]"){
+    return "correcto";
+  }
+  else if(a === "[]"){
     return "correcto";
   }
   else{
