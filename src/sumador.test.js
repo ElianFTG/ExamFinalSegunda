@@ -8,6 +8,9 @@ describe("Sumar", () => {
   it("deberia retornar incorrecto con [[", () => {
     expect(cadena("[[")).toEqual("incorrecto");
   });
+  it("deberia retornar incorrecto con cualquier otro caracter que no contenga corchete", () => {
+    expect(cadena("dfsdf")).toEqual("incorrecto");
+  });
   it("deberia retornar correcto con [[]]", () => {
     expect(cadena("[[]]")).toEqual("correcto");
   });
